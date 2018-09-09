@@ -2,6 +2,7 @@
 //Búa til sólgelraugu með path
 gleraugu = Snap(220, 200);
 var path = gleraugu.path("M10,10 c60,200 100,5 100,10 c60,200 100,5 100,10z");
+gleraugu.attr({ id : 'gler'})
 //Búa til munn með path
 munnur = Snap (220, 220);
 var path1 = munnur.path("M10,100 c10,200 200,100 200,10");
@@ -32,4 +33,8 @@ function Animation(){
 	setTimeout(function(){
 		path.animate({ d: "M10,10 c60,200 100,5 100,10 c60,200 100,5 100,10z" }, 1000, mina.bounce);},3500);
 }
+var gler = document.getElementById('gler');
+console.log(gler)
 setInterval(Animation ,20000);
+gler.addEventListener("mouseover", Animation);
+
