@@ -36,5 +36,6 @@ function Animation(){
 var gler = document.getElementById('gler');
 console.log(gler)
 setInterval(Animation ,20000);
+//Reyndi að láta hover á svg-ið en náði ekki að láta það virka
 gler.addEventListener("mouseover", Animation);
 
