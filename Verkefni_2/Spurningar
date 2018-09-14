@@ -1,0 +1,5 @@
+1.
+  a. GPU er parturinn af tölvunni sem er gerður til að hraða ferlið að búa til myndir og vinna með graphics.
+  b. Pixlar eru minnsti punktur á myndum á skjá.
+  c. Framebuffer geymir frames af gögnum í RAM, Raster-scan skannar inn myndir í línum frá topnum, 
+     Refresh rate er hversu oft á sekúntu skjár updatar.
