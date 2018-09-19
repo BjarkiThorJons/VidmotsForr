@@ -3,3 +3,6 @@
   b. Pixlar eru minnsti punktur á myndum á skjá.
   c. Framebuffer geymir frames af gögnum í RAM, Raster-scan skannar inn myndir í línum frá topnum, 
      Refresh rate er hversu oft á sekúntu skjár updatar.
+  d. WebGL er javascript api til að gera 2d og 3d graphics í browser, OpenGL er 3d og 2d graphics api sem er á mörgum forritunar málum
+     og platformum
+2.
