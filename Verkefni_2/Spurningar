@@ -6,3 +6,8 @@
   d. WebGL er javascript api til að gera 2d og 3d graphics í browser, OpenGL er 3d og 2d graphics api sem er á mörgum forritunar málum
      og platformum
 2.
+3. Rendering pipeline tekur inn 3d object sem er búinn til úr primatives.
+   Fyrsta skref er Vertex processing. Vertex processing tekur upplýsingar um öll horn(vertices) og breytir þeim í primatives
+   og velur hnitin. Síðan er valið hvar myndavélin á að vera hversu langt frá hlutirinn er frá henni, FOV, with og height á myndinni.
+   Primatives eru breytt í fragments sem er 3d vörpun af pixlum þetta ferli kallast rasterization. Fragmentin eru síðan unnið með 
+   og er sett textur og ljós á hlutin eftir skipunum. Síðast er breytt öllum þessum fragments í 2d grid af pixlum til að setja á skjáinn.
