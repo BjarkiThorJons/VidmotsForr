@@ -5,9 +5,24 @@ let camera = new THREE.PerspectiveCamera( 100, window.innerWidth / window.innerH
 let renderer = new THREE.WebGLRenderer();
 renderer.setSize( window.innerWidth, window.innerHeight );
 document.body.appendChild( renderer.domElement );
+
+var textureLoader = new THREE.TextureLoader();
+var texture = textureLoader.load( 'myndir/stone.png' );
+
+
+var materials = [
+    new THREE.MeshBasicMaterial( { map: texture } ),
+    new THREE.MeshBasicMaterial( { map: texture } ),
+    new THREE.MeshBasicMaterial( { map: texture } ),
+    new THREE.MeshBasicMaterial( { map: texture } ),
+    new THREE.MeshBasicMaterial( { map: texture } ),
+    new THREE.MeshBasicMaterial( { map: texture } )
+];
+var faceMaterial = new THREE.MeshFaceMaterial( materials );
+
 let geometry = new THREE.BoxGeometry( 1, 1, 1 );
 let material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );
-let cube = new THREE.Mesh( geometry, material );
+let cube = new THREE.Mesh( geometry, faceMaterial );
 let edges = new THREE.EdgesGeometry( geometry );
 let line = new THREE.LineSegments( edges, new THREE.LineBasicMaterial( { color: 0xffffff } ) );
 
