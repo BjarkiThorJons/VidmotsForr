@@ -18,7 +18,7 @@ var materials = [
     new THREE.MeshBasicMaterial( { map: texture } ),
     new THREE.MeshBasicMaterial( { map: texture } )
 ];
-var faceMaterial = new THREE.MeshFaceMaterial( new THREE.MeshBasicMaterial( { map: texture } ) );
+var faceMaterial = new THREE.MeshFaceMaterial( materials );
 
 let geometry = new THREE.BoxGeometry( 1, 1, 1 );
 let material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );
